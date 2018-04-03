@@ -1,39 +1,77 @@
 @font-face {
   font-family: 'iconfont';  /* project id 579306 */
-  src: url('https://at.alicdn.com/t/font_579306_3c5ze05q1kdo0f6r.eot');
-  src: url('https://at.alicdn.com/t/font_579306_3c5ze05q1kdo0f6r.eot?#iefix') format('embedded-opentype'),
-  url('https://at.alicdn.com/t/font_579306_3c5ze05q1kdo0f6r.woff') format('woff'),
-  url('https://at.alicdn.com/t/font_579306_3c5ze05q1kdo0f6r.ttf') format('truetype'),
-  url('https://at.alicdn.com/t/font_579306_3c5ze05q1kdo0f6r.svg#iconfont') format('svg');
+  src: url('https://at.alicdn.com/t/font_579306_arozm9xwx6979zfr.eot');
+  src: url('https://at.alicdn.com/t/font_579306_arozm9xwx6979zfr.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_579306_arozm9xwx6979zfr.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_579306_arozm9xwx6979zfr.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_579306_arozm9xwx6979zfr.svg#iconfont') format('svg');
 }
 body{
 	background: url('../img/g1.jpg');
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	background-position: center 0;
 	background-size: cover;
 }
 *{
-	margin: 0;
-	padding: 0;
+	 margin: 0;
+	padding: 0; 
 }
 .banner{
 	width: 100%;
 	height: 700px;
-	background: rgba(0, 0, 0, 0.5);
+	padding: 30px 0;
+	background: rgba(0, 0, 0, 0.4);
 	background-size: cover;
 	background-attachment: fixed;
-	    /* padding: 138px 0 0; */
+	    /* padding: 138px 0 0;
 	    /* background-repeat: no-repeat; */
 	    /* background-origin: content-box; */
 	    /* background-position: center; */
 	    overflow: hidden;
 	    background-position: center 0;
-
+}
+.totop{
+	position: fixed;
+    bottom: 24px;
+    right: 3%;
+    z-index: 999;
+    width: 32px;
+    height: 32px;
+    text-indent: 100%;
+    /* display: none; */
+    background: url('../img/totop.png') 0px 0px no-repeat;
+}
+#menu{
+	display: block;
+    position: fixed;
+    height: 40px;
+    right: 15%;
+    top: 33px;
+    width: 46px;
+    z-index: 9999;
+    /* background: url('../img/menu.png'); */
+}
+.menuicon{
+	display: block;
+	font-family: 'iconfont';
+	color: #A77C81;
+	font-size: 26px;
+	cursor: pointer;
+}
+.menu_con{
+	width: 210px;
+	height: 100%;
+	position: fixed;
+	right: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
 }
 .banner1{
 	width: 340px;
 	height:70px;
-	/* background: rgba(0, 0, 0, 0.3); */
+	/* background: rgba(0, 0, 0, 0.8); */
 	background-color: #567182;
 	margin: 0 auto;
 	margin-top: 150px;
@@ -207,6 +245,227 @@ body{
 	margin-bottom: 10px;
 	margin-top: 10px;
 }
+/* skill */
+.w3_agileits-service-left h3 {
+    text-align: left;
+    color: #333;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+.skills-right {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+div#skills {
+    background: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+}
+
+
+/*-- Skills bar effects --*/
+
+.skill-grids {
+    margin: 3em 0;
+}
+
+.skills h4 {
+    font-size: 1.8em;
+    color: #4378ff;
+    letter-spacing: 2px;
+    margin-bottom: 0.8em;
+}
+
+.skills-w3lsleft ul li {
+    display: block;
+    font-size: 1em;
+    color: #999;
+    margin-top: 1em;
+}
+
+.skills-w3lsleft ul li i.fa {
+    font-size: 1.2em;
+    margin-right: 0.5em;
+}
+
+.skillbar {
+    position: relative;
+    display: inline-block;
+    margin: 15px 0;
+    width: 100%;
+    background: #eee;
+    height: 35px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    font-weight: bold;
+    font-size: 13px;
+    color: red;
+    background: #6adcfa;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.skillbar-bar {
+    height: 35px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 35px;
+    line-height: 35px;
+    color: rgba(0, 0, 0, 0.88);
+}
+
+
+/*-- //Skills bar effects --*/
+
+.vertical-skills {
+    margin-top: 85px;
+    text-align: center;
+}
+
+.vertical-skills li {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 200px;
+    margin: 0 10px;
+}
+
+.vertical-skills li:before {
+    content: '';
+    background: #03afdd;
+    display: block;
+    top: -53px;
+    left: 20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.vertical-skills li:after {
+    content: '';
+    background: #9a9a9a;
+    display: block;
+    top: -43px;
+    left: 24px;
+    width: 1px;
+    height: 93px;
+    position: absolute;
+}
+
+@media (max-width: 400px) {
+    .vertical-skills li {
+        width: 25px;
+    }
+}
+
+.vertical-skills li span.skill {
+    position: absolute;
+    animation-duration: 5s;
+    animation-name: height;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #330;
+}
+
+.vertical-skills li div.skill {
+    position: absolute;
+    animation-duration: 5s;
+    animation-name: height;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: red;
+    z-index: 2;
+}
+
+.vertical-skills li span.title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: -85px;
+    font-size: 1.1em;
+    color: red;
+    font-weight: 600;
+}
+
+span.value {
+    transform: rotate(-90deg);
+    display: inline-block;
+    margin: 6em 0;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 1em;
+}
+/* skill */
+.container3{
+	width: 100%;
+	height: auto;
+}
+.zuopin_content{
+    padding-left: 0;
+    padding-right: 0;
+}
+.zuopin{
+	width: 100%;
+	height: auto;
+}
+.zuopin_1{
+	width: 100%;
+	height: auto;
+	padding: 30px;
+	position: relative;
+    background-clip: border-box;
+    overflow: hidden;
+}
+.zuopin_1 img{
+	width: 100%;
+}
+ .zuopin_cover{
+	width: 100%;
+    padding-top: 68%;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    opacity: 0.4;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    display: none;
+    z-index: 10;
+    padding: 40%;
+} 
+.zuopin_1:hover.zuopin_cover{
+	display: block;
+}
 .container2{
 	width: 100%;
 	height: auto;
@@ -280,7 +539,6 @@ body{
 }
 .product_show1 {
 	font-size: 20px;
-	
 	margin-top: 20px;
 	/* float: left; */
 	margin-left: 50px;
